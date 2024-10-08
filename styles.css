@@ -191,6 +191,10 @@ body {
 }
 
 .box-style {
+<<<<<<< HEAD
+=======
+    margin: 2rem 2rem ;
+>>>>>>> 2ce80f7d7e11891ea5015887c663ca793b82f198
     padding: 10px;
     border-radius: 10px;
 }
