@@ -33,7 +33,7 @@ body {
 }
 
 .main-title {
-    font-size: 5rem;
+    font-size: 10rem;
     color: #ADEEE3;
     font-weight: bold;
     text-shadow: 3px 3px 15px rgba(0, 0, 0, 0.8);
@@ -126,8 +126,10 @@ body {
 .box {
     display: flex;
     flex-direction: row;
+    /* Stack elements vertically */
     justify-content: center;
     align-items: center;
+    /* Center the content horizontally */
     background: rgba(0, 0, 0, 0.7);
     color: white;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -136,7 +138,15 @@ body {
     border-radius: 15px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
     padding: 20px;
-    text-align: left;
+    text-align: center;
+    /* Center the text within the container */
+}
+
+.heading-box {
+    display: flex;
+    flex-direction: column;
+    width: 40vw;
+    margin: 0 20px;
 }
 
 .descbox {
@@ -155,16 +165,25 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     min-height: 50vh;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    color: white;
-    min-width: 40vw
+    width: 100%;
+    border-radius: 10px;
 }
 
+/* Position the h3 text outside of the image box */
 .image-box h3 {
-    background-color: rgba(62, 62, 52, 0.5);
+    background-color: rgba(62, 62, 52);
+    color: white;
+    font-size: 30px;
+    margin-top: -20px;
+    /* Pull the heading closer to the image box */
+    padding: 10px 15px;
+    text-align: center;
+    width: 100%;
+    border-radius: 0 0 10px 10px;
+    /* Keep the rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
 }
+
 
 .img1 {
     background-image: url("images/hunt.jpg");
@@ -201,6 +220,19 @@ body {
 
 .text-box {
     min-height: 50vh;
+}
+
+.event-heading {
+    background-color: rgba(62, 62, 52, 0.5);
+    color: white;
+    font-size: 30px;
+    margin-top: 10px;
+    padding: 10px 15px;
+    width: 100%;
+    border-radius: 0 0 10px 10px;
+    /* Rounded corners */
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
 }
 
 /* Responsive adjustments */
