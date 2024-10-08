@@ -60,6 +60,47 @@ body {
     text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
 }
 
+.button-box {
+    text-align: center;
+    /* Center the button */
+    margin-top: 20px;
+    /* Add space above the button */
+}
+
+.button-box a {
+    display: inline-block;
+    /* Make it behave like a button */
+    padding: 15px 30px;
+    /* Padding for the button */
+    font-size: 18px;
+    /* Font size */
+    color: white;
+    /* Text color */
+    background-color: #4CAF50;
+    /* Green background */
+    border: none;
+    /* Remove border */
+    border-radius: 25px;
+    /* Rounded corners */
+    text-decoration: none;
+    /* Remove underline */
+    transition: background-color 0.3s, transform 0.2s;
+    /* Smooth transition */
+}
+
+.button-box a:hover {
+    background-color: #45a049;
+    /* Darker green on hover */
+    transform: scale(1.05);
+    /* Slightly grow on hover */
+}
+
+.button-box a:active {
+    transform: scale(0.95);
+    /* Slightly shrink on click */
+}
+
+
 /* Sections visible when scrolling */
 .section {
     background-color: rgba(0, 0, 0, 0.8);
