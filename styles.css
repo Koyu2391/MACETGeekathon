@@ -157,7 +157,7 @@ body {
     min-height: 50vh;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     color: white;
     min-width: 40vw
 }
