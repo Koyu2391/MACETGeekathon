@@ -89,7 +89,7 @@ body {
     max-width: 800px;
     margin: 0 auto;
     line-height: 1.6;
-    padding: 0 10px;
+    padding: 20px 10px;
     opacity: 0.9;
 }
 
@@ -113,6 +113,7 @@ body {
 
 .paragraphs {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin: 20px;
 }
 
 /* Event container and box styling */
@@ -150,7 +151,7 @@ body {
 }
 
 .descbox {
-    font-size: 0.85rem;
+    font-size: 1.15rem;
     /* Slightly smaller text by default */
     line-height: 1.3;
     /* Tighter line spacing */
@@ -158,6 +159,7 @@ body {
     /* Reduce padding */
     margin: 10px 0;
     /* Reduce margin */
+    text-align: left;
 }
 
 .image-box {
@@ -218,6 +220,10 @@ body {
     min-height: 30vh;
 }
 
+.rules-box ul li {
+    text-align: left;
+}
+
 .text-box {
     min-height: 50vh;
 }
@@ -240,7 +246,6 @@ body {
 
     /* Adjust font size, line-height and spacing for .descbox */
     .descbox {
-        font-size: 0.8rem;
         /* Smaller text for tablets */
         line-height: 1.2;
         /* Tighter line spacing */
@@ -258,6 +263,8 @@ body {
 
     .image-box {
         min-height: 30vh;
+        background-size: contain;
+        background-repeat: no-repeat;
         /* Smaller image height on tablets */
     }
 
@@ -281,9 +288,6 @@ body {
         /* Adjust section headings */
     }
 
-    .descbox {
-        font-size: 0.2rem;
-    }
 }
 
 /* Additional adjustments for small mobile devices (up to 480px) */
@@ -291,8 +295,6 @@ body {
 
     /* Further reduce font size, line-height and spacing for .descbox */
     .descbox {
-        font-size: 0.1rem;
-        /* Even smaller text for mobile */
         line-height: 1.1;
         /* Tighter line spacing */
         padding: 5px 8px;
@@ -311,6 +313,8 @@ body {
 
     .image-box {
         min-height: 25vh;
+        background-size: contain;
+        /* background-repeat: no-repeat; */
         /* Further reduce image height on mobile */
     }
 
