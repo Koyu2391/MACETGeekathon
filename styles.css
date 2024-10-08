@@ -191,10 +191,6 @@ body {
 }
 
 .box-style {
-<<<<<<< HEAD
-=======
-    margin: 2rem 2rem ;
->>>>>>> 2ce80f7d7e11891ea5015887c663ca793b82f198
     padding: 10px;
     border-radius: 10px;
 }
@@ -252,6 +248,10 @@ body {
         font-size: 2.5rem;
         /* Adjust section headings */
     }
+
+    .descbox {
+        font-size: 0.2rem;
+    }
 }
 
 /* Additional adjustments for small mobile devices (up to 480px) */
@@ -259,7 +259,7 @@ body {
 
     /* Further reduce font size, line-height and spacing for .descbox */
     .descbox {
-        font-size: 0.75rem;
+        font-size: 0.1rem;
         /* Even smaller text for mobile */
         line-height: 1.1;
         /* Tighter line spacing */
