@@ -237,19 +237,15 @@ body {
 }
 
 .img3 {
-    background-image: url("images/css-challenge.jpg");
-}
-
-.img4 {
-    background-image: url("images/typing.jpg");
+    background-image: url("images/css-challenge1.jpg");
 }
 
 .img5 {
-    background-image: url("images/quiz.jpg");
+    background-image: url("images/quiz1.jpg");
 }
 
 .img6 {
-    background-image: url("images/hackathon.jpg");
+    background-image: url("images/hackathon1.jpg");
 }
 
 .box-style {
