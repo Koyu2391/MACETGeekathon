@@ -1,10 +1,16 @@
+/* Importing Google Font - Roboto */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+
 /* Reset margin and padding */
-body, html {
+body,
+html {
     margin: 0;
     padding: 0;
     height: 100%;
     font-family: Arial, sans-serif;
     scroll-behavior: smooth;
+    display: flex;
+    flex-direction: column;
 }
 
 /* Set the background image */
@@ -15,61 +21,281 @@ body {
 
 /* Content at the top (GeekFEST section) */
 .content {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     text-align: center;
-    color: white;
-    padding: 100px 20px;
-    background: rgba(0, 0, 0, 0.4); /* Slight dark overlay */
+    height: 100vh;
+    padding: 150px 20px;
+    background: rgba(0, 0, 0, 0.7);
+    flex: 1 0 auto;
+    margin-bottom: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
 }
 
 .main-title {
-    font-size: 4rem;
+    font-size: 5rem;
+    color: #ADEEE3;
     font-weight: bold;
-    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.8);
+    text-shadow: 3px 3px 15px rgba(0, 0, 0, 0.8);
     margin: 0;
 }
 
 .subtitle {
-    font-size: 1.5rem;
+    font-size: 2rem;
+    color: white;
     margin-top: 10px;
     margin-bottom: 5px;
     opacity: 0.9;
+    letter-spacing: 1px;
 }
 
 .description {
-    font-size: 1.2rem;
-    opacity: 0.8;
+    color: white;
+    font-size: 1.5rem;
+    opacity: 0.9;
     max-width: 600px;
     margin: 0 auto;
+    line-height: 1.6;
+    padding: 0 10px;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
 }
 
 /* Sections visible when scrolling */
 .section {
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(0, 0, 0, 0.8);
     color: white;
     text-align: center;
-    padding: 100px 20px;
-    min-height: 100vh;
+    padding: 30px 20px;
+    flex: 1 0 auto;
+    border-radius: 15px;
+    margin: 20px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.section:hover {
+    transform: translateY(-5px);
+    background-color: rgba(45, 45, 45, 1);
 }
 
 .section h2 {
-    font-size: 2.5rem;
+    font-size: 3rem;
     margin-bottom: 20px;
+    font-weight: bold;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
 }
 
 .section p {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     max-width: 800px;
     margin: 0 auto;
+    line-height: 1.6;
+    padding: 0 10px;
+    opacity: 0.9;
 }
 
+/* Specific section styles */
 #about {
-    background: rgba(25, 25, 25, 0.7); /* Darker background for this section */
+    background: rgba(25, 25, 25, 0.8);
 }
 
 #events {
-    background: rgba(45, 45, 45, 0.7); /* Slightly different background */
+    background: rgba(45, 45, 45, 0.8);
 }
 
 #contact {
-    background: rgba(65, 65, 65, 0.7); /* Another shade for the contact section */
+    background: rgba(65, 65, 65, 0.8);
+}
+
+/* Headings and Paragraph styles */
+.headings {
+    color: #ADEEE3;
+}
+
+.paragraphs {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+/* Event container and box styling */
+.event-container {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.box {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 18px;
+    line-height: 1.6;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    text-align: center;
+}
+
+.descbox {
+    font-size: 0.85rem;
+    /* Slightly smaller text by default */
+    line-height: 1.3;
+    /* Tighter line spacing */
+    padding: 10px 15px;
+    /* Reduce padding */
+    margin: 10px 0;
+    /* Reduce margin */
+}
+
+.image-box {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    min-width: 40vw
+}
+
+.image-box h3 {
+    background-color: rgba(62, 62, 52, 0.5);
+}
+
+.img1 {
+    background-image: url("images/hunt.jpg");
+}
+
+.img2 {
+    background-image: url("images/dsa.jpg");
+}
+
+.img3 {
+    background-image: url("images/css-challenge.jpg");
+}
+
+.img4 {
+    background-image: url("images/typing.jpg");
+}
+
+.img5 {
+    background-image: url("images/quiz.jpg");
+}
+
+.img6 {
+    background-image: url("images/hackathon.jpg");
+}
+
+.box-style {
+    border: 2px solid white;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.rules-box {
+    min-height: 30vh;
+}
+
+.text-box {
+    min-height: 50vh;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+
+    /* Adjust font size, line-height and spacing for .descbox */
+    .descbox {
+        font-size: 0.8rem;
+        /* Smaller text for tablets */
+        line-height: 1.2;
+        /* Tighter line spacing */
+        padding: 8px 10px;
+        /* Reduced padding */
+        margin: 8px 0;
+        /* Reduced margin */
+    }
+
+    /* Adjust overall box layout on smaller screens */
+    .box {
+        flex-direction: column;
+        /* Stack items vertically */
+    }
+
+    .image-box {
+        min-height: 30vh;
+        /* Smaller image height on tablets */
+    }
+
+    .main-title {
+        font-size: 4rem;
+        /* Adjust main title for smaller screens */
+    }
+
+    .subtitle {
+        font-size: 1.5rem;
+        /* Adjust subtitle */
+    }
+
+    .description {
+        font-size: 1.2rem;
+        /* Adjust description font */
+    }
+
+    .section h2 {
+        font-size: 2.5rem;
+        /* Adjust section headings */
+    }
+}
+
+/* Additional adjustments for small mobile devices (up to 480px) */
+@media (max-width: 480px) {
+
+    /* Further reduce font size, line-height and spacing for .descbox */
+    .descbox {
+        font-size: 0.75rem;
+        /* Even smaller text for mobile */
+        line-height: 1.1;
+        /* Tighter line spacing */
+        padding: 5px 8px;
+        /* Minimal padding */
+        margin: 5px 0;
+        /* Minimal margin */
+    }
+
+    /* Make the boxes fully responsive and images smaller */
+    .box {
+        flex-direction: column;
+        /* Stack items vertically */
+        font-size: 0.8rem;
+        /* Smaller text for boxes */
+    }
+
+    .image-box {
+        min-height: 25vh;
+        /* Further reduce image height on mobile */
+    }
+
+    .main-title {
+        font-size: 2.5rem;
+        /* Adjust main title for small screens */
+    }
+
+    .subtitle {
+        font-size: 1.2rem;
+        /* Adjust subtitle */
+    }
+
+    .description {
+        font-size: 1rem;
+        /* Adjust description font */
+    }
+
+    .section h2 {
+        font-size: 2rem;
+        /* Adjust section headings */
+    }
 }
