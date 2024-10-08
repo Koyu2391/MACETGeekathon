@@ -191,7 +191,7 @@ body {
 }
 
 .box-style {
-    border: 2px solid white;
+    margin: 2rem 2rem ;
     padding: 10px;
     border-radius: 10px;
 }
